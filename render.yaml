@@ -23,5 +23,9 @@ services:
         value: Trunghieu
       - key: DB_POSTGRESDB_PASSWORD
         value: CjZU5_Nbp-XNdiU_bG6a2A
-			-	key: N8N_ENCRYPTION_KEY
+      - key: DB_POSTGRESDB_SSL
+        value: true
+      - key: N8N_ENCRYPTION_KEY
         value: D8eKpWJ1Z9r3gLz8UsTvL3EhvlVhC3QZbZ2Dd4TyfcI=
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: true
