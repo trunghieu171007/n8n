@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: n8n
+    runtime: docker
+    env: docker
+    plan: free
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: trinhhieu284@gmail.com
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: 17102007
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_DATABASE
+        value: defaultdb
+      - key: DB_POSTGRESDB_HOST
+        value: unique-peacock-10857.j77.aws-ap-southeast-1.cockroachlabs.cloud
+      - key: DB_POSTGRESDB_PORT
+        value: 26257
+      - key: DB_POSTGRESDB_USER
+        value: Trunghieu
+      - key: DB_POSTGRESDB_PASSWORD
+        value: CjZU5_Nbp-XNdiU_bG6a2A
