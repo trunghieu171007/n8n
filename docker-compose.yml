@@ -5,10 +5,10 @@ services:
     container_name: n8n
     environment:
       - N8N_ENCRYPTION_KEY=your-encryption-key-here
-      - N8N_HOST=n8n.local
+      - N8N_HOST=https://n8n-8d7e.onrender.com
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
-      - N8N_BASE_URL=https://n8n.local
+      - N8N_BASE_URL=https://n8n-8d7e.onrender.com
     volumes:
       - ~/.n8n:/home/node/.n8n
     ports:
